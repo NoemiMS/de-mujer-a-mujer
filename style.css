@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #7EC4CF;
     padding: 20px 0;
 }
 
@@ -36,6 +35,7 @@
     border: 1px dotted #FF9AA2;
     background-color: #FFB7B2;
     color: black;
+    cursor: pointer;
     font-family: 'Sriracha', cursive;
     font-size: 18px;
     max-width: 280px;
@@ -53,8 +53,8 @@
 .my-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding-top: 20%;
 }
 
 .secret-modal {
