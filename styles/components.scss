@@ -1,0 +1,111 @@
+.btn {
+    border: 4px solid var(--c-primary-dark);
+    background-color: var(--c-primary);
+    color: black;
+    cursor: pointer;
+    font-family: var(--f-secondary);
+    font-size: 18px;
+    max-width: 280px;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 6px;
+    &:hover {
+        background-color: var(--c-secondary-light);
+        border-color: var(--c-secondary);
+        transition: all ease-in 1s;
+        color: var(--c-white);
+    }
+}
+
+
+.secret-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 1;
+}
+
+.secret-modal__content {
+    padding: 20px;
+    min-height: 50%;
+    width: 80%;
+    z-index: 0;
+    font-size: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    word-break: break-word;
+}
+
+.secret-modal__close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.secret-modal__close:hover,
+.secret-modal__close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.know-secret {
+    border: 5px dashed var(--c-secondary);
+    width: 70%;
+    padding: 40px;
+    color: var(--c-secondary);
+    font-size: 24px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+}
+
+.decoration {
+    position: absolute;
+}
+
+.decoration1 {
+    top: 2%;
+    left: 2%;
+}
+
+.moon {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    box-shadow:inset 16px 0px #C58BF1, inset 16px 0px 1px 2px #C58BF1;
+    animation: moon ease-in 2s infinite;
+ }
+
+ .inner-content {
+    padding: 40px;
+    color: var(--c-secondary);
+    font-size: 24px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .subtitle {
+        margin-top: 30px;
+    }
+ }

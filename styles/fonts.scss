@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Paytone+One&display=swap');
+
+:root {
+    --f-primary: 'Paytone One';
+    --f-secondary: 'Barriecito';
+}
+
+h1, h2, h3 {
+    font-family: var(--f-secondary);
+    color: var(--c-primary-dark);
+}
+
+.title {
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 34px;
+    line-height: 1.5;
+}
+
+
+
+.neon-decoration {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #0ff,
+        0 0 80px #0ff,
+        0 0 90px #0ff,
+        0 0 100px #0ff,
+        0 0 150px #0ff;
+}

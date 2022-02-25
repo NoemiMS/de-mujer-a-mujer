@@ -4,26 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
     <title>Become a frontend!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="stars.css">
 </head>
-<body class="my-web">
-    <header class="my-header">
-        <h1><img class="my-logo" src="logo.svg" alt=""></h1>
+<body class="web">
+    <header class="header">
+        <h1 class="header__title">
+            <img class="logo" src="img/logo.svg" alt="">
+            <span> Magic web world</span>
+        </h1>
+        <nav class="header__menu">
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="#">Frontend</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Backend</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main class="my-content">
-        <h2>Do you know what you get if you become a frontend developer?</h2>
-        <button id="myBtn" class="my-btn">Know the secret!</button>
-        <div id="modal" class="secret-modal">
+    <main class="content">
+        <section class="know-secret">
+            <h2 class="title">Should you become a frontend?</h2>
+            <p>If you want to be able to do magic with code creating awesome CSS animations, transform designs into real products which your friends&family could enjoy, learn a lot of things about internet and enjoy every day with your work... Become a frontend!</p>
+            <p>When you are, you'll be able to know our secret!</p>
+        </section>
+        <section class="call-action full-width">
+            <div class="inner-content">
+                <h3 class="subtitle">Do you know what you get if you become a frontend developer?</h3>
+                <button id="myBtn" class="btn">Know it!</button>
+            </div>
+        </section>
 
+
+
+            <!-- Decoration -->
+            <div class="decoration decoration1">
+                <div class="moon"></div>   
+            </div>
+            <!-- Modal and overflow -->
+
+        <div id="modal" class="secret-modal">
             <div class="secret-modal__content">
                 <span class="secret-modal__close">&times;</span>
                 <p class="neon-decoration"> You can go to infinity and beyoooooooooond!</p>
             </div>
-        
-
             <div id="myOverflow" class="magic-overflow">
                 <div class="stelle bianche"></div>
                 <div class="stelle giganti"></div>
@@ -31,7 +59,7 @@
         </div>
 
     </main>
-    <footer class="my-footer">
+    <footer class="footer">
         <p>By <a href="https://www.linkedin.com/in/noemedina/" target="_blank">Noe Medina</a></p>
     </footer>
     <script src="myJS.js"></script>
