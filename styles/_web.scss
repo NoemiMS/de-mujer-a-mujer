@@ -16,17 +16,14 @@ a {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
 }
 
 .full-width {
     width: 100%;
     padding: 60px 0;
-    margin: 30px 0;
-    background-color: var(--c-white);
     border: 2px solid var(--c-secondary);
     border-width: 2px 0;
+    position: relative;
 }

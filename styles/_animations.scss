@@ -1,0 +1,65 @@
+@keyframes moon {
+    0%{
+      transform: scale(1) rotate(-135deg);
+    }
+    50%{
+        transform: scale(1.2) rotate(-155deg);
+    }
+    100% {
+      transform: scale(1) rotate(-135deg)
+    }
+  }
+
+  @keyframes star1 {
+    0% {
+      transform: scale(2, 1) rotate(45deg);
+    }
+    50% {
+      transform: scale(1, 1) rotate(45deg);
+    }
+    100% {
+      transform: scale(2, 1) rotate(45deg);
+    }
+  }
+  
+  @keyframes star2 {
+    0% {
+      transform: scale(2, 1) rotate(45deg);
+    }
+    50% {
+      transform: scale(1, 1) rotate(45deg);
+    }
+    100% {
+      transform: scale(2, 1) rotate(45deg);
+    }
+  }
+  
+  @keyframes star3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes star4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes star5 {
+    0% {
+      transform: scale(2, 1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1, 1) rotate(-45deg);
+    }
+    100% {
+      transform: scale(2, 1) rotate(-45deg);
+    }
+  }

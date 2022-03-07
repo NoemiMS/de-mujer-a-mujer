@@ -113,140 +113,62 @@ h1, h2, h3 {
 }
 
 @-webkit-keyframes moon {
-  0%, 100% {
+  0% {
     -webkit-transform: scale(1) rotate(-135deg);
             transform: scale(1) rotate(-135deg);
   }
-  30%, 60% {
+  50% {
     -webkit-transform: scale(1.2) rotate(-155deg);
             transform: scale(1.2) rotate(-155deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(-135deg);
+            transform: scale(1) rotate(-135deg);
   }
 }
 
 @keyframes moon {
-  0%, 100% {
+  0% {
     -webkit-transform: scale(1) rotate(-135deg);
             transform: scale(1) rotate(-135deg);
   }
-  30%, 60% {
+  50% {
     -webkit-transform: scale(1.2) rotate(-155deg);
             transform: scale(1.2) rotate(-155deg);
   }
-}
-
-.decoration {
-  position: absolute;
-}
-
-.decoration1 {
-  top: 2%;
-  left: 2%;
-}
-
-.moon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 16px 0px #C58BF1, inset 16px 0px 1px 2px #C58BF1;
-          box-shadow: inset 16px 0px #C58BF1, inset 16px 0px 1px 2px #C58BF1;
-  -webkit-animation: moon ease-in 2s infinite;
-          animation: moon ease-in 2s infinite;
-}
-
-.star {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  display: block;
-  border-radius: 50%;
-  float: left;
-  position: absolute;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-animation-name: star3;
-          animation-name: star3;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  transform-origin: 50% 50%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.star:before {
-  width: 20px;
-  height: 20px;
-  content: "";
-  background-color: white;
-  position: absolute;
-  -webkit-transform: scale(1, 2) rotate(45deg);
-          transform: scale(1, 2) rotate(45deg);
-  -webkit-animation-name: star1;
-          animation-name: star1;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  border-radius: 20%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.star:after {
-  width: 20px;
-  height: 20px;
-  content: "";
-  background-color: white;
-  position: absolute;
-  -webkit-transform: scale(2, 1) rotate(45deg);
-          transform: scale(2, 1) rotate(45deg);
-  -webkit-animation-name: star2;
-          animation-name: star2;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  border-radius: 20%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  100% {
+    -webkit-transform: scale(1) rotate(-135deg);
+            transform: scale(1) rotate(-135deg);
+  }
 }
 
 @-webkit-keyframes star1 {
   0% {
-    -webkit-transform: scale(1, 2) rotate(45deg);
-            transform: scale(1, 2) rotate(45deg);
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
   }
   50% {
     -webkit-transform: scale(1, 1) rotate(45deg);
             transform: scale(1, 1) rotate(45deg);
   }
   100% {
-    -webkit-transform: scale(1, 2) rotate(45deg);
-            transform: scale(1, 2) rotate(45deg);
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
   }
 }
 
 @keyframes star1 {
   0% {
-    -webkit-transform: scale(1, 2) rotate(45deg);
-            transform: scale(1, 2) rotate(45deg);
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
   }
   50% {
     -webkit-transform: scale(1, 1) rotate(45deg);
             transform: scale(1, 1) rotate(45deg);
   }
   100% {
-    -webkit-transform: scale(1, 2) rotate(45deg);
-            transform: scale(1, 2) rotate(45deg);
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
   }
 }
 
@@ -288,6 +210,227 @@ h1, h2, h3 {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@keyframes star3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes star4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes star4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes star5 {
+  0% {
+    -webkit-transform: scale(2, 1) rotate(-45deg);
+            transform: scale(2, 1) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: scale(1, 1) rotate(-45deg);
+            transform: scale(1, 1) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: scale(2, 1) rotate(-45deg);
+            transform: scale(2, 1) rotate(-45deg);
+  }
+}
+
+@keyframes star5 {
+  0% {
+    -webkit-transform: scale(2, 1) rotate(-45deg);
+            transform: scale(2, 1) rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: scale(1, 1) rotate(-45deg);
+            transform: scale(1, 1) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: scale(2, 1) rotate(-45deg);
+            transform: scale(2, 1) rotate(-45deg);
+  }
+}
+
+.decoration {
+  background-color: var(--c-white);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.moon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 16px 0px #C58BF1, inset 16px 0px 1px 2px #C58BF1;
+          box-shadow: inset 16px 0px #C58BF1, inset 16px 0px 1px 2px #C58BF1;
+  -webkit-animation: moon ease-in 2s infinite;
+          animation: moon ease-in 2s infinite;
+  position: absolute;
+  right: 55px;
+  bottom: 30px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: var(--c-primary-dark);
+  display: block;
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation-name: star3;
+          animation-name: star3;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.star:before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: var(--c-primary-dark);
+  position: absolute;
+  -webkit-transform: scale(1, 2) rotate(45deg);
+          transform: scale(1, 2) rotate(45deg);
+  -webkit-animation-name: star1;
+          animation-name: star1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  border-radius: 20%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.star:after {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: var(--c-primary-dark);
+  position: absolute;
+  -webkit-transform: scale(2, 1) rotate(45deg);
+          transform: scale(2, 1) rotate(45deg);
+  -webkit-animation-name: star2;
+          animation-name: star2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  border-radius: 20%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.star1 {
+  top: 15%;
+  right: 5%;
+}
+
+.star2 {
+  top: 7%;
+  right: 36%;
+  background-color: var(--c-secondary-light);
+}
+
+.star2:before, .star2:after {
+  background-color: var(--c-secondary-light);
+}
+
+.star3 {
+  left: 45%;
+  bottom: 6%;
+  -webkit-animation-name: star3;
+          animation-name: star3;
+}
+
+.star4 {
+  top: 17%;
+  left: 5%;
+}
+
+.star5 {
+  bottom: 20%;
+  left: 9%;
+  background-color: var(--c-secondary-light);
+}
+
+.star5:before, .star5:after {
+  background-color: var(--c-secondary-light);
+}
+
+@keyframes star1 {
+  0% {
+    -webkit-transform: scale(1, 2) rotate(45deg);
+            transform: scale(1, 2) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: scale(1, 1) rotate(45deg);
+            transform: scale(1, 1) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(1, 2) rotate(45deg);
+            transform: scale(1, 2) rotate(45deg);
+  }
+}
+
+@keyframes star2 {
+  0% {
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: scale(1, 1) rotate(45deg);
+            transform: scale(1, 1) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: scale(2, 1) rotate(45deg);
+            transform: scale(2, 1) rotate(45deg);
   }
 }
 
@@ -413,26 +556,18 @@ a {
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
 }
 
 .full-width {
   width: 100%;
   padding: 60px 0;
-  margin: 30px 0;
-  background-color: var(--c-white);
   border: 2px solid var(--c-secondary);
   border-width: 2px 0;
+  position: relative;
 }
 
 .footer {
@@ -456,18 +591,20 @@ a {
   color: black;
   cursor: pointer;
   font-family: var(--f-secondary);
-  font-size: 18px;
-  max-width: 280px;
+  font-size: 38px;
+  min-width: 400px;
   margin-top: 30px;
   padding: 25px;
   border-radius: 6px;
+  -webkit-transition: all ease-in .5s;
+  transition: all ease-in .5s;
 }
 
 .btn:hover {
   background-color: var(--c-secondary-light);
   border-color: var(--c-secondary);
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
+  -webkit-transition: all ease-in .5s;
+  transition: all ease-in .5s;
   color: var(--c-white);
 }
 
@@ -529,7 +666,7 @@ a {
   padding: 40px;
   color: var(--c-secondary);
   font-size: 24px;
-  margin: 40px 0;
+  margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,10 +677,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .know-secret .title {
   margin-bottom: 30px;
+}
+
+.know-secret p {
+  margin-bottom: 20px;
 }
 
 .inner-content {
