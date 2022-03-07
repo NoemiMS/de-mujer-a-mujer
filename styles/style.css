@@ -99,8 +99,7 @@ h1, h2, h3 {
 
 .neon-decoration {
   color: #fff;
-  text-transform: uppercase;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px var(--c-secondary-light), 0 0 80px var(--c-secondary-light), 0 0 90px var(--c-secondary-light), 0 0 100px var(--c-secondary-light), 0 0 150px var(--c-secondary-light);
 }
 
 :root {
@@ -650,7 +649,7 @@ a {
   font-weight: bold;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: -50ggipx;
 }
 
 .secret-modal__close:hover,
